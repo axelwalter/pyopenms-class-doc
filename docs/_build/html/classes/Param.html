@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Param &mdash; pyOpenMS Documentation  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> pyOpenMS Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Content:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../classes.html">Class Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyOpenMS Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Param</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/classes/Param.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="param">
+<h1>Param<a class="headerlink" href="#param" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Param">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Param</span></span><a class="headerlink" href="#Param" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<p>Cython implementation of _Param</p>
+<p>Documentation is available at <a class="reference external" href="http://www.openms.de/current_doxygen/html/classOpenMS_1_1Param.html">http://www.openms.de/current_doxygen/html/classOpenMS_1_1Param.html</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.addTag">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">addTag</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.addTag" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void addTag(libcpp_utf8_string key, libcpp_utf8_string tag)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.addTags">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">addTags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.addTags" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void addTags(libcpp_utf8_string key, libcpp_vector[libcpp_utf8_string] tags)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.asDict">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">asDict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.asDict" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.checkDefaults">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">checkDefaults</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.checkDefaults" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<ul class="simple">
+<li><p>Cython signature: void checkDefaults(libcpp_utf8_string name, Param defaults, libcpp_utf8_string prefix)</p></li>
+<li><p>Cython signature: void checkDefaults(libcpp_utf8_string name, Param defaults)</p></li>
+</ul>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.clear">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.clear" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void clear()</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.clearTags">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">clearTags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.clearTags" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void clearTags(libcpp_utf8_string key)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.copy">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.copy" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<ul class="simple">
+<li><p>Cython signature: Param copy(libcpp_utf8_string prefix, bool)</p></li>
+<li><p>Cython signature: Param copy(libcpp_utf8_string prefix)</p></li>
+</ul>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.descriptions">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">descriptions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.descriptions" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.empty">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">empty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.empty" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: bool empty()</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.exists">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">exists</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.exists" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: bool exists(libcpp_utf8_string key)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.get">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.get" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.getDescription">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">getDescription</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.getDescription" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: libcpp_utf8_output_string getDescription(libcpp_utf8_string key)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.getEntry">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">getEntry</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.getEntry" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: ParamEntry getEntry(libcpp_utf8_string)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.getSectionDescription">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">getSectionDescription</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.getSectionDescription" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: libcpp_utf8_output_string getSectionDescription(libcpp_utf8_string key)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.getTags">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">getTags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.getTags" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: libcpp_vector[libcpp_utf8_string] getTags(libcpp_utf8_string key)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.getValue">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">getValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.getValue" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: ParamValue getValue(libcpp_utf8_string key)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.getValueType">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">getValueType</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.getValueType" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: ValueType getValueType(libcpp_utf8_string key)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.hasTag">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">hasTag</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.hasTag" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: int hasTag(libcpp_utf8_string key, libcpp_utf8_string tag)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.insert">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">insert</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.insert" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void insert(libcpp_utf8_string prefix, Param param)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.items">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">items</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.items" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.keys">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">keys</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.keys" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.merge">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">merge</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.merge" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void merge(Param toMerge)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.remove">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.remove" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void remove(libcpp_utf8_string key)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.removeAll">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">removeAll</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.removeAll" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void removeAll(libcpp_utf8_string prefix)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.setDefaults">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">setDefaults</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.setDefaults" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<ul class="simple">
+<li><p>Cython signature: void setDefaults(Param defaults, libcpp_utf8_string prefix, bool showMessage)</p></li>
+<li><p>Cython signature: void setDefaults(Param defaults, libcpp_utf8_string prefix)</p></li>
+<li><p>Cython signature: void setDefaults(Param defaults)</p></li>
+</ul>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.setMaxFloat">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">setMaxFloat</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.setMaxFloat" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setMaxFloat(libcpp_utf8_string key, double max)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.setMaxInt">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">setMaxInt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.setMaxInt" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setMaxInt(libcpp_utf8_string key, int max)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.setMinFloat">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">setMinFloat</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.setMinFloat" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setMinFloat(libcpp_utf8_string key, double min)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.setMinInt">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">setMinInt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.setMinInt" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setMinInt(libcpp_utf8_string key, int min)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.setSectionDescription">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">setSectionDescription</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.setSectionDescription" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setSectionDescription(libcpp_utf8_string key, libcpp_utf8_string desc)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.setValidStrings">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">setValidStrings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.setValidStrings" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setValidStrings(libcpp_utf8_string key, libcpp_vector[libcpp_utf8_string] strings)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.setValue">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">setValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.setValue" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<ul class="simple">
+<li><p>Cython signature: void setValue(libcpp_utf8_string key, ParamValue val, libcpp_utf8_string desc, libcpp_vector[libcpp_utf8_string] tags)</p></li>
+<li><p>Cython signature: void setValue(libcpp_utf8_string key, ParamValue val, libcpp_utf8_string desc)</p></li>
+<li><p>Cython signature: void setValue(libcpp_utf8_string key, ParamValue val)</p></li>
+</ul>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.size">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.size" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: size_t size()</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.update">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.update" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>use cases:</p>
+<blockquote>
+<div><p>p.update(dict d)
+p.update(Param p)
+p.update(Param p, int flag)</p>
+</div></blockquote>
+<dl class="py method">
+<dt class="sig sig-object py" id="Param.values">
+<span class="sig-prename descclassname"><span class="pre">Param.</span></span><span class="sig-name descname"><span class="pre">values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Param.values" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, axelwalter.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

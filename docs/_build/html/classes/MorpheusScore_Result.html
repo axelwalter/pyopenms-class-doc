@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MorpheusScore_Result &mdash; pyOpenMS Documentation  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="MultiplexDeltaMasses" href="MultiplexDeltaMasses.html" />
+    <link rel="prev" title="MorpheusScore" href="MorpheusScore.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> pyOpenMS Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Content:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../classes.html">Class Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ConsensusMapDF.html">ConsensusMapDF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureMapDF.html">FeatureMapDF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MSExperimentDF.html">MSExperimentDF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AbsoluteQuantitationStandardsFile.html">AbsoluteQuantitationStandardsFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ActivationMethod.html">ActivationMethod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ArrayWrapperFloat.html">ArrayWrapperFloat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CVReference.html">CVReference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CachedMzMLHandler.html">CachedMzMLHandler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ChromatogramTools.html">ChromatogramTools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ChromeleonFile.html">ChromeleonFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConsensusFeature.html">ConsensusFeature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DataFilter.html">DataFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DataFilters.html">DataFilters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DataProcessing.html">DataProcessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DataType.html">DataType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DataValue.html">DataValue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DateTime.html">DateTime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DigestionEnzyme.html">DigestionEnzyme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ExperimentalSettings.html">ExperimentalSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FIAMSScheduler.html">FIAMSScheduler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureFinderMultiplexAlgorithm.html">FeatureFinderMultiplexAlgorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureFindingMetabo.html">FeatureFindingMetabo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureGroupingAlgorithmLabeled.html">FeatureGroupingAlgorithmLabeled</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureHandle.html">FeatureHandle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Gradient.html">Gradient</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IDFilter.html">IDFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IMSAlphabet.html">IMSAlphabet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InclusionExclusionList.html">InclusionExclusionList</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IndexedMzMLFileLoader.html">IndexedMzMLFileLoader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Interfaces.html">Interfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IonType.html">IonType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsobaricChannelInformation.html">IsobaricChannelInformation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsotopeDistributionCache.html">IsotopeDistributionCache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsotopeMarker.html">IsotopeMarker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Kernel_MassTrace.html">Kernel_MassTrace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMTransitionGroupPicker.html">MRMTransitionGroupPicker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MSExperiment.html">MSExperiment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MSPFile.html">MSPFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MT_QUANTMETHOD.html">MT_QUANTMETHOD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MapAlignmentAlgorithmIdentification.html">MapAlignmentAlgorithmIdentification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MapAlignmentEvaluationAlgorithmPrecision.html">MapAlignmentEvaluationAlgorithmPrecision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ModificationsDB.html">ModificationsDB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MorpheusScore.html">MorpheusScore</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">MorpheusScore_Result</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MultiplexDeltaMasses.html">MultiplexDeltaMasses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MultiplexDeltaMasses_DeltaMass.html">MultiplexDeltaMasses_DeltaMass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MzDataFile.html">MzDataFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MzMLSpectrumDecoder.html">MzMLSpectrumDecoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MzXMLFile.html">MzXMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Normalizer.html">Normalizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OPXLDataStructs.html">OPXLDataStructs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpenPepXLAlgorithm.html">OpenPepXLAlgorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OptimizationFunctions_PenaltyFactors.html">OptimizationFunctions_PenaltyFactors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OptimizePick.html">OptimizePick</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OptimizePick_Data.html">OptimizePick_Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PScore.html">PScore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ParamNode.html">ParamNode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ParamXMLFile.html">ParamXMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeakBoundary.html">PeakBoundary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeakPickerHiRes.html">PeakPickerHiRes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeakPickerSH.html">PeakPickerSH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeptideHit.html">PeptideHit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeptideHit_AnalysisResult.html">PeptideHit_AnalysisResult</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeptideHit_PeakAnnotation.html">PeptideHit_PeakAnnotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PercolatorFeatureSetHelper.html">PercolatorFeatureSetHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Precursor.html">Precursor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProcessingAction.html">ProcessingAction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProtonDistributionModel.html">ProtonDistributionModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QcMLFile.html">QcMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QualityParameter.html">QualityParameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Ratio.html">Ratio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Residue.html">Residue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SequestOutfile.html">SequestOutfile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimProtein.html">SimProtein</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimRandomNumberGenerator.html">SimRandomNumberGenerator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimpleSearchEngineAlgorithm.html">SimpleSearchEngineAlgorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SiriusFragmentAnnotation.html">SiriusFragmentAnnotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SiriusFragmentAnnotation_SiriusTargetDecoySpectra.html">SiriusFragmentAnnotation_SiriusTargetDecoySpectra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Software.html">Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="StablePairFinder.html">StablePairFinder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SvmModelParameterSet.html">SvmModelParameterSet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SvmTheoreticalSpectrumGenerator.html">SvmTheoreticalSpectrumGenerator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SwathFile.html">SwathFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TMTTenPlexQuantitationMethod.html">TMTTenPlexQuantitationMethod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TransformationModelBSpline.html">TransformationModelBSpline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UnitType.html">UnitType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VersionDetails.html">VersionDetails</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VersionInfo.html">VersionInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="streampos.html">streampos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AAIndex.html">AAIndex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AnnotationState.html">AnnotationState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BaseFeature.html">BaseFeature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CVTermList.html">CVTermList</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ChromatogramExtractorAlgorithm.html">ChromatogramExtractorAlgorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompNovoIonScoringCID.html">CompNovoIonScoringCID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConfidenceScoring.html">ConfidenceScoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConsensusMapNormalizerAlgorithmQuantile.html">ConsensusMapNormalizerAlgorithmQuantile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ContinuousWaveletTransform.html">ContinuousWaveletTransform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ContinuousWaveletTransformNumIntegration.html">ContinuousWaveletTransformNumIntegration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConvexHull2D.html">ConvexHull2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CsiAdapterRun.html">CsiAdapterRun</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Digestion.html">Digestion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DocumentIdentifier.html">DocumentIdentifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ElutionModelFitter.html">ElutionModelFitter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EmgScoring.html">EmgScoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ExtractionCoordinates.html">ExtractionCoordinates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Fitter1D.html">Fitter1D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GoodDiffFilter.html">GoodDiffFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IDMapper.html">IDMapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IDMapper_SpectraIdentificationState.html">IDMapper_SpectraIdentificationState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IdentificationData.html">IdentificationData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IntensityBalanceFilter.html">IntensityBalanceFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Internal_MzMLValidator.html">Internal_MzMLValidator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsotopeLabelingMDVs.html">IsotopeLabelingMDVs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsotopePattern.html">IsotopePattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsotopeVariant.html">IsotopeVariant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsotopeWavelet.html">IsotopeWavelet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LLMParam.html">LLMParam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LPWrapper.html">LPWrapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LightCompound.html">LightCompound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LightModification.html">LightModification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LightProtein.html">LightProtein</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LightTargetedExperiment.html">LightTargetedExperiment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LightTransition.html">LightTransition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LocalLinearMap.html">LocalLinearMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMFeatureQCFile.html">MRMFeatureQCFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MSDataSqlConsumer.html">MSDataSqlConsumer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MascotGenericFile.html">MascotGenericFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MascotInfile.html">MascotInfile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassAnalyzer.html">MassAnalyzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassDecomposition.html">MassDecomposition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassTraceDetection.html">MassTraceDetection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassTraces.html">MassTraces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Measure.html">Measure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NonNegativeLeastSquaresSolver.html">NonNegativeLeastSquaresSolver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OPXLSpectrumProcessingAlgorithms.html">OPXLSpectrumProcessingAlgorithms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpenSwathOSWWriter.html">OpenSwathOSWWriter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PSProteinInference.html">PSProteinInference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ParamCTDFile.html">ParamCTDFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeakFileOptions.html">PeakFileOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeakIndex.html">PeakIndex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeakPickerCWT.html">PeakPickerCWT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeptideIndexing.html">PeptideIndexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ResidueDB.html">ResidueDB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sample.html">Sample</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Seed.html">Seed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SolverParam.html">SolverParam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectraMerger.html">SpectraMerger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectrumAlignment.html">SpectrumAlignment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectrumSettings.html">SpectrumSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="StringView.html">StringView</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SwathMapMassCorrection.html">SwathMapMassCorrection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tagging.html">Tagging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TheoreticalIsotopePattern.html">TheoreticalIsotopePattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ThresholdMower.html">ThresholdMower</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ToolInfo.html">ToolInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="XFDRAlgorithm.html">XFDRAlgorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="XLPrecursor.html">XLPrecursor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="XMLHandler.html">XMLHandler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="XTandemInfile.html">XTandemInfile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="XTandemXMLFile.html">XTandemXMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AccurateMassSearchResult.html">AccurateMassSearchResult</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Acquisition.html">Acquisition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Attachment.html">Attachment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Base64.html">Base64</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BayesianProteinInferenceAlgorithm.html">BayesianProteinInferenceAlgorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BilinearInterpolation.html">BilinearInterpolation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CVTermListInterface.html">CVTermListInterface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CVTerm_ControlledVocabulary.html">CVTerm_ControlledVocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CalibrationData.html">CalibrationData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ChargePair.html">ChargePair</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ClusterProxyKD.html">ClusterProxyKD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CoarseIsotopePatternGenerator.html">CoarseIsotopePatternGenerator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConsensusXMLFile.html">ConsensusXMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CsiAdapterIdentification.html">CsiAdapterIdentification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DBoundingBox2.html">DBoundingBox2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DIAScoring.html">DIAScoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DigestionEnzymeRNA.html">DigestionEnzymeRNA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EDTAFile.html">EDTAFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ElementDB.html">ElementDB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FalseDiscoveryRate.html">FalseDiscoveryRate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureDistance.html">FeatureDistance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureFinderAlgorithmIsotopeWavelet.html">FeatureFinderAlgorithmIsotopeWavelet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureFinderIdentificationAlgorithm.html">FeatureFinderIdentificationAlgorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureMap.html">FeatureMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureMapping.html">FeatureMapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureMapping_FeatureMappingInfo.html">FeatureMapping_FeatureMappingInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureMapping_FeatureToMs2Indices.html">FeatureMapping_FeatureToMs2Indices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FineIsotopePatternGenerator.html">FineIsotopePatternGenerator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IDDecoyProbability.html">IDDecoyProbability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IMSElement.html">IMSElement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IncludeExcludeTarget.html">IncludeExcludeTarget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsobaricQuantifier.html">IsobaricQuantifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsobaricQuantifierStatistics.html">IsobaricQuantifierStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsotopeDiffFilter.html">IsotopeDiffFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsotopeDistribution.html">IsotopeDistribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="KDTreeFeatureNode.html">KDTreeFeatureNode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMFeatureFilter.html">MRMFeatureFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMMapping.html">MRMMapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MasstraceCorrelator.html">MasstraceCorrelator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MzQCFile.html">MzQCFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OSBinaryDataArray.html">OSBinaryDataArray</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OSChromatogram.html">OSChromatogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OSSpectrum.html">OSSpectrum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OSSpectrumMeta.html">OSSpectrumMeta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpenPepXLLFAlgorithm.html">OpenPepXLLFAlgorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpenSwathHelper.html">OpenSwathHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_PeakArea.html">PI_PeakArea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_PeakBackground.html">PI_PeakBackground</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PI_PeakShapeMetrics.html">PI_PeakShapeMetrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeakIntegrator.html">PeakIntegrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeakPickerIterative.html">PeakPickerIterative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PepXMLFile.html">PepXMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeptideIdentification.html">PeptideIdentification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeptideProteinResolution.html">PeptideProteinResolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeptideProteinResolution_ConnectedComponent.html">PeptideProteinResolution_ConnectedComponent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PercolatorInfile.html">PercolatorInfile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PrecursorPurity.html">PrecursorPurity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PurityScores.html">PurityScores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QTCluster.html">QTCluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QTClusterFinder.html">QTClusterFinder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RNaseDigestion.html">RNaseDigestion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RibonucleotideDB.html">RibonucleotideDB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SeedListGenerator.html">SeedListGenerator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimplePeak.html">SimplePeak</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimpleTSGXLMS.html">SimpleTSGXLMS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SiriusMzTabWriter.html">SiriusMzTabWriter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SiriusMzTabWriter_SiriusSpectrumMSInfo.html">SiriusMzTabWriter_SiriusSpectrumMSInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectrumAccessSqMass.html">SpectrumAccessSqMass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectrumAlignmentScore.html">SpectrumAlignmentScore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SqMassConfig.html">SqMassConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SqMassFile.html">SqMassFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SvmTheoreticalSpectrumGeneratorTrainer.html">SvmTheoreticalSpectrumGeneratorTrainer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SwathWindowLoader.html">SwathWindowLoader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TM_DataPoint.html">TM_DataPoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TOFCalibration.html">TOFCalibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TransformationModelInterpolated.html">TransformationModelInterpolated</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WindowMower.html">WindowMower</a></li>
+<li class="toctree-l2"><a class="reference internal" href="XRefType_CVTerm_ControlledVocabulary.html">XRefType_CVTerm_ControlledVocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AQS_featureConcentration.html">AQS_featureConcentration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AQS_runConcentration.html">AQS_runConcentration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AbsoluteQuantitationStandards.html">AbsoluteQuantitationStandards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AggregationMethod.html">AggregationMethod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AhoCorasickAmbiguous.html">AhoCorasickAmbiguous</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BasicProteinInferenceAlgorithm.html">BasicProteinInferenceAlgorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CVMappingFile.html">CVMappingFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CachedmzML.html">CachedmzML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ChannelInfo.html">ChannelInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ChromatogramSettings.html">ChromatogramSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompNovoIdentification.html">CompNovoIdentification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompNovoIdentificationCID.html">CompNovoIdentificationCID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ComplementMarker.html">ComplementMarker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConsensusIDAlgorithm.html">ConsensusIDAlgorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConsensusIDAlgorithmSimilarity.html">ConsensusIDAlgorithmSimilarity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConsensusIDAlgorithmWorst.html">ConsensusIDAlgorithmWorst</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConsensusMapNormalizerAlgorithmThreshold.html">ConsensusMapNormalizerAlgorithmThreshold</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DecoyTransitionType.html">DecoyTransitionType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureFinderAlgorithmPicked.html">FeatureFinderAlgorithmPicked</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FloatDataArray.html">FloatDataArray</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GaussFilter.html">GaussFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GaussTraceFitter.html">GaussTraceFitter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IDConflictResolverAlgorithm.html">IDConflictResolverAlgorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IDRipper.html">IDRipper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ITRAQ_TYPES.html">ITRAQ_TYPES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IdentificationDataConverter.html">IdentificationDataConverter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IdentificationRuns.html">IdentificationRuns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IndexTriple.html">IndexTriple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IndexedMzMLHandler.html">IndexedMzMLHandler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InstrumentSettings.html">InstrumentSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IonSource.html">IonSource</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsotopeModel.html">IsotopeModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ItraqConstants.html">ItraqConstants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ItraqFourPlexQuantitationMethod.html">ItraqFourPlexQuantitationMethod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LibSVMEncoder.html">LibSVMEncoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LogType.html">LogType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMFeature.html">MRMFeature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMFeatureFinderScoring.html">MRMFeatureFinderScoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMFeaturePickerFile.html">MRMFeaturePickerFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MSDataAggregatingConsumer.html">MSDataAggregatingConsumer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MSPGenericFile.html">MSPGenericFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MSSim.html">MSSim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MapAlignmentEvaluationAlgorithmRecall.html">MapAlignmentEvaluationAlgorithmRecall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NASequence.html">NASequence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OMSSAXMLFile.html">OMSSAXMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OnDiscMSExperiment.html">OnDiscMSExperiment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpenMSBuildInfo.html">OpenMSBuildInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpenMSOSInfo.html">OpenMSOSInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OriginAnnotationFormat.html">OriginAnnotationFormat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PSLPFormulation.html">PSLPFormulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ParamEntry.html">ParamEntry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeakIntensityPredictor.html">PeakIntensityPredictor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeakWidthEstimator.html">PeakWidthEstimator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProgressLogger.html">ProgressLogger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RANSAC.html">RANSAC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RANSACParam.html">RANSACParam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RANSACQuadratic.html">RANSACQuadratic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RNPxlReport.html">RNPxlReport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RNPxlReportRow.html">RNPxlReportRow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RNPxlReportRowHeader.html">RNPxlReportRowHeader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ReactionMonitoringTransition.html">ReactionMonitoringTransition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RipFileContent.html">RipFileContent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RipFileIdentifier.html">RipFileIdentifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SVMData.html">SVMData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SVMWrapper.html">SVMWrapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SavitzkyGolayFilter.html">SavitzkyGolayFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ScanMode.html">ScanMode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SignalToNoiseEstimatorMedian.html">SignalToNoiseEstimatorMedian</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SignalToNoiseEstimatorMedianChrom.html">SignalToNoiseEstimatorMedianChrom</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SiriusAdapterAlgorithm.html">SiriusAdapterAlgorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SiriusAdapterIdentification.html">SiriusAdapterIdentification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SiriusTemporaryFileSystemObjects.html">SiriusTemporaryFileSystemObjects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectrumAnnotator.html">SpectrumAnnotator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectrumLookup.html">SpectrumLookup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectrumMetaData.html">SpectrumMetaData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectrumMetaDataLookup.html">SpectrumMetaDataLookup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SplineInterpolatedPeaks.html">SplineInterpolatedPeaks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SplinePackage.html">SplinePackage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SplineSpectrum_Navigator.html">SplineSpectrum_Navigator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SqrtMower.html">SqrtMower</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TSE_Match.html">TSE_Match</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tagger.html">Tagger</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TargetedSpectraExtractor.html">TargetedSpectraExtractor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TextFile.html">TextFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TransformationDescription.html">TransformationDescription</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TransformationStatistics.html">TransformationStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TransformationXMLFile.html">TransformationXMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UnimodXMLFile.html">UnimodXMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AASeqWithMass.html">AASeqWithMass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AScore.html">AScore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AbsoluteQuantitationMethodFile.html">AbsoluteQuantitationMethodFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AcquisitionInfo.html">AcquisitionInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AnalysisSummary.html">AnalysisSummary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AnnotationStatistics.html">AnnotationStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Assay.html">Assay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BernNorm.html">BernNorm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BiGaussFitter1D.html">BiGaussFitter1D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CVMappingRule.html">CVMappingRule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CVMappings.html">CVMappings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CVTerm.html">CVTerm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CachedSwathFileConsumer.html">CachedSwathFileConsumer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompNovoIonScoring.html">CompNovoIonScoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConsensusIDAlgorithmRanks.html">ConsensusIDAlgorithmRanks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ContactPerson.html">ContactPerson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CsiFingerIdMzTabWriter.html">CsiFingerIdMzTabWriter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DeNovoIonScore.html">DeNovoIonScore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DigestSimulation.html">DigestSimulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DimensionDescription.html">DimensionDescription</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DistanceMatrix.html">DistanceMatrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EmgFitter1D.html">EmgFitter1D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EnzymaticDigestion.html">EnzymaticDigestion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FIAMSDataProcessor.html">FIAMSDataProcessor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureXMLFile.html">FeatureXMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HMMState.html">HMMState</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HPLC.html">HPLC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HiddenMarkovModel.html">HiddenMarkovModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ILPDCWrapper.html">ILPDCWrapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IMSWeights.html">IMSWeights</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsobaricChannelExtractor.html">IsobaricChannelExtractor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsobaricNormalizer.html">IsobaricNormalizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ItraqEightPlexQuantitationMethod.html">ItraqEightPlexQuantitationMethod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="KroenikFile.html">KroenikFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LinearInterpolation.html">LinearInterpolation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LowessSmoothing.html">LowessSmoothing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMRTNormalizer.html">MRMRTNormalizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MSChromatogram.html">MSChromatogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MSDataCachedConsumer.html">MSDataCachedConsumer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MSQuantifications.html">MSQuantifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MapAlignmentAlgorithmPoseClustering.html">MapAlignmentAlgorithmPoseClustering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MarkerMower.html">MarkerMower</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MetaInfoRegistry.html">MetaInfoRegistry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ModificationDefinitionsSet.html">ModificationDefinitionsSet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MorphologicalFilter.html">MorphologicalFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MzIdentMLFile.html">MzIdentMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MzMLSwathFileConsumer.html">MzMLSwathFileConsumer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NLargest.html">NLargest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NeutralLossMarker.html">NeutralLossMarker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpenSwathDataAccessHelper.html">OpenSwathDataAccessHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OptimizePeakDeconvolution.html">OptimizePeakDeconvolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OptimizePeakDeconvolution_Data.html">OptimizePeakDeconvolution_Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Peak1D.html">Peak1D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Peak2D.html">Peak2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeakPickerMRM.html">PeakPickerMRM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PenaltyFactorsIntensity.html">PenaltyFactorsIntensity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PrecursorIonSelectionPreprocessing.html">PrecursorIonSelectionPreprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProbablePhosphoSites.html">ProbablePhosphoSites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProteaseDB.html">ProteaseDB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProteinGroup.html">ProteinGroup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProteinIdentification.html">ProteinIdentification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RNPxlMarkerIonExtractor.html">RNPxlMarkerIonExtractor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RegularSwathFileConsumer.html">RegularSwathFileConsumer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ResidueModification.html">ResidueModification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RichPeak2D.html">RichPeak2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SILACLabeler.html">SILACLabeler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SVMPrediction.html">SVMPrediction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Scaler.html">Scaler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SearchParameters.html">SearchParameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimpleSVM.html">SimpleSVM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TICFilter.html">TICFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TMTElevenPlexQuantitationMethod.html">TMTElevenPlexQuantitationMethod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TheoreticalSpectrumGeneratorXLMS.html">TheoreticalSpectrumGeneratorXLMS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TraceInfo.html">TraceInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UniqueIdGenerator.html">UniqueIdGenerator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Unit.html">Unit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="XQuestScores.html">XQuestScores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AMSE_AdductInfo.html">AMSE_AdductInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AbsoluteQuantitation.html">AbsoluteQuantitation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AbsoluteQuantitationMethod.html">AbsoluteQuantitationMethod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BSpline2d.html">BSpline2d</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BoundaryCondition.html">BoundaryCondition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CVMappingTerm.html">CVMappingTerm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ColumnHeader.html">ColumnHeader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ComplementFilter.html">ComplementFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConsensusIDAlgorithmIdentity.html">ConsensusIDAlgorithmIdentity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConsensusIDAlgorithmPEPMatrix.html">ConsensusIDAlgorithmPEPMatrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConsensusMap.html">ConsensusMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DigestionEnzymeProtein.html">DigestionEnzymeProtein</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ElutionPeakDetection.html">ElutionPeakDetection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureDeconvolution.html">FeatureDeconvolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureFileOptions.html">FeatureFileOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureFinderAlgorithmMetaboIdent.html">FeatureFinderAlgorithmMetaboIdent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureFinderMetaboIdentCompound.html">FeatureFinderMetaboIdentCompound</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureGroupingAlgorithmQT.html">FeatureGroupingAlgorithmQT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FileType.html">FileType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FileTypes.html">FileTypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IBSpectraFile.html">IBSpectraFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ISDGroup.html">ISDGroup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IdXMLFile.html">IdXMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InspectInfile.html">InspectInfile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InspectOutfile.html">InspectOutfile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InternalCalibration.html">InternalCalibration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InternalCalibration_LockMass.html">InternalCalibration_LockMass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InterpolationModel.html">InterpolationModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LinearResamplerAlign.html">LinearResamplerAlign</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMAssay.html">MRMAssay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MS2File.html">MS2File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MSDGroup.html">MSDGroup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MapAlignmentAlgorithmSpectrumAlignment.html">MapAlignmentAlgorithmSpectrumAlignment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassDecompositionAlgorithm.html">MassDecompositionAlgorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MassExplainer.html">MassExplainer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MetaInfo.html">MetaInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MetaInfoDescription.html">MetaInfoDescription</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MetaboliteSpectralMatching.html">MetaboliteSpectralMatching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ModifiedPeptideGenerator.html">ModifiedPeptideGenerator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ModifiedPeptideGenerator_MapToResidueType.html">ModifiedPeptideGenerator_MapToResidueType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MsInspectFile.html">MsInspectFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MzMLFile.html">MzMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MzMLSqliteHandler.html">MzMLSqliteHandler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MzQuantMLFile.html">MzQuantMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MzTab.html">MzTab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MzTabFile.html">MzTabFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NeutralLossDiffFilter.html">NeutralLossDiffFilter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OPXLHelper.html">OPXLHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeakCandidate.html">PeakCandidate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeakMarker.html">PeakMarker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeakPickerMaxima.html">PeakPickerMaxima</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PepXMLFileMascot.html">PepXMLFileMascot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeptideAndProteinQuant.html">PeptideAndProteinQuant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeptideAndProteinQuant_PeptideData.html">PeptideAndProteinQuant_PeptideData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeptideAndProteinQuant_ProteinData.html">PeptideAndProteinQuant_ProteinData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeptideAndProteinQuant_Statistics.html">PeptideAndProteinQuant_Statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeptideEntry.html">PeptideEntry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeptideEvidence.html">PeptideEvidence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PosteriorErrorProbabilityModel.html">PosteriorErrorProbabilityModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PrecursorCorrection.html">PrecursorCorrection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Product.html">Product</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProteinEntry.html">ProteinEntry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProteinHit.html">ProteinHit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProteinProteinCrossLink.html">ProteinProteinCrossLink</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProteinResolver.html">ProteinResolver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProteinResolverResult_Type.html">ProteinResolverResult_Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QuotingMethod.html">QuotingMethod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RansacModelQuadratic.html">RansacModelQuadratic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ResolverResult.html">ResolverResult</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ScanWindow.html">ScanWindow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SemanticValidator.html">SemanticValidator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SemanticValidator_CVTerm.html">SemanticValidator_CVTerm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SignalToNoiseEstimatorMeanIterative.html">SignalToNoiseEstimatorMeanIterative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectraSTSimilarityScore.html">SpectraSTSimilarityScore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectralMatch.html">SpectralMatch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectrumAccessOpenMSCached.html">SpectrumAccessOpenMSCached</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectrumHelper.html">SpectrumHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="String.html">String</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SvmTheoreticalSpectrumGeneratorSet.html">SvmTheoreticalSpectrumGeneratorSet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TMTSixPlexQuantitationMethod.html">TMTSixPlexQuantitationMethod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TMTSixteenPlexQuantitationMethod.html">TMTSixteenPlexQuantitationMethod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TransformationModelLowess.html">TransformationModelLowess</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TransitionTSVFile.html">TransitionTSVFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BiGaussModel.html">BiGaussModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BinnedSpectrum.html">BinnedSpectrum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BoxElement.html">BoxElement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CV.html">CV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ChromatogramExtractor.html">ChromatogramExtractor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ChromatogramPeak.html">ChromatogramPeak</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ClusteringGrid.html">ClusteringGrid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConsensusIDAlgorithmPEPIons.html">ConsensusIDAlgorithmPEPIons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConsensusMapNormalizerAlgorithmMedian.html">ConsensusMapNormalizerAlgorithmMedian</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Contact.html">Contact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CubicSpline2d.html">CubicSpline2d</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DPosition1.html">DPosition1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DPosition2.html">DPosition2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DTA2DFile.html">DTA2DFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ExperimentalDesignFile.html">ExperimentalDesignFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FileHandler.html">FileHandler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FilterFunctor.html">FilterFunctor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GridBasedCluster.html">GridBasedCluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HyperScore.html">HyperScore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IdentificationHit.html">IdentificationHit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IndexedMzMLDecoder.html">IndexedMzMLDecoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Instrument.html">Instrument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IntegerDataArray.html">IntegerDataArray</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IonOpticsType.html">IonOpticsType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsotopeWaveletTransform.html">IsotopeWaveletTransform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JavaInfo.html">JavaInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LabeledPairFinder.html">LabeledPairFinder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMFQC_ComponentGroupPairQCs.html">MRMFQC_ComponentGroupPairQCs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMFQC_ComponentGroupQCs.html">MRMFQC_ComponentGroupQCs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMFQC_ComponentQCs.html">MRMFQC_ComponentQCs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMFeatureQC.html">MRMFeatureQC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMFragmentSelection.html">MRMFragmentSelection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMIonSeries.html">MRMIonSeries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMScoring.html">MRMScoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MSNumpressCoder.html">MSNumpressCoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MSSpectrum.html">MSSpectrum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MZTrafoModel.html">MZTrafoModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MZTrafoModel_MODELTYPE.html">MZTrafoModel_MODELTYPE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MatrixDouble.html">MatrixDouble</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MetaboTargetedAssay.html">MetaboTargetedAssay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MetaboTargetedAssay_CompoundTargetDecoyPair.html">MetaboTargetedAssay_CompoundTargetDecoyPair</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MetaboliteFeatureDeconvolution.html">MetaboliteFeatureDeconvolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ModificationDefinition.html">ModificationDefinition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MultiplexDeltaMassesGenerator.html">MultiplexDeltaMassesGenerator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MultiplexDeltaMassesGenerator_Label.html">MultiplexDeltaMassesGenerator_Label</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MultiplexIsotopicPeakPattern.html">MultiplexIsotopicPeakPattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NoiseEstimator.html">NoiseEstimator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NormalizationMethod.html">NormalizationMethod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NumpressConfig.html">NumpressConfig</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OMSSACSVFile.html">OMSSACSVFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OSWFile.html">OSWFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OfflinePrecursorIonSelection.html">OfflinePrecursorIonSelection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ParamValue.html">ParamValue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeakShape.html">PeakShape</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PeakTypeEstimator.html">PeakTypeEstimator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Peptide.html">Peptide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PercolatorOutfile.html">PercolatorOutfile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProtXMLFile.html">ProtXMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProteaseDigestion.html">ProteaseDigestion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Publication.html">Publication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="QuantitativeExperimentalDesign.html">QuantitativeExperimentalDesign</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RansacModelLinear.html">RansacModelLinear</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RetentionTime.html">RetentionTime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SequestInfile.html">SequestInfile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SignalToNoiseEstimatorMedianRapid.html">SignalToNoiseEstimatorMedianRapid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimplePairFinder.html">SimplePairFinder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SiriusAdapterHit.html">SiriusAdapterHit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SiriusAdapterRun.html">SiriusAdapterRun</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectrumAccessOpenMS.html">SpectrumAccessOpenMS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectrumAccessOpenMSInMemory.html">SpectrumAccessOpenMSInMemory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectrumAccessTransforming.html">SpectrumAccessTransforming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectrumIdentification.html">SpectrumIdentification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="StringDataArray.html">StringDataArray</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TargetedExperiment_Instrument.html">TargetedExperiment_Instrument</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TargetedExperiment_Interpretation.html">TargetedExperiment_Interpretation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TargetedExperiment_Modification.html">TargetedExperiment_Modification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TraMLFile.html">TraMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TraMLProduct.html">TraMLProduct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TransitionPQPFile.html">TransitionPQPFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TwoDOptimization.html">TwoDOptimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ValueType.html">ValueType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AASequence.html">AASequence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AccurateMassSearchEngine.html">AccurateMassSearchEngine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Adduct.html">Adduct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AverageLinkage.html">AverageLinkage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ChargedIndexSet.html">ChargedIndexSet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ChecksumType.html">ChecksumType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Compomer.html">Compomer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConsensusIDAlgorithmAverage.html">ConsensusIDAlgorithmAverage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ConsensusIDAlgorithmBest.html">ConsensusIDAlgorithmBest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CrossLinkSpectrumMatch.html">CrossLinkSpectrumMatch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CrossLinksDB.html">CrossLinksDB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CsiAdapterHit.html">CsiAdapterHit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CsvFile.html">CsvFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DRange1.html">DRange1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DRange2.html">DRange2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DRangeIntersection.html">DRangeIntersection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Date.html">Date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DecoyGenerator.html">DecoyGenerator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Deisotoper.html">Deisotoper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EmgGradientDescent.html">EmgGradientDescent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EmgModel.html">EmgModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EmpiricalFormula.html">EmpiricalFormula</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EnzymaticDigestionLogModel.html">EnzymaticDigestionLogModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ExperimentalDesign_MSFileSectionEntry.html">ExperimentalDesign_MSFileSectionEntry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ExperimentalDesign_SampleSection.html">ExperimentalDesign_SampleSection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FASTAEntry.html">FASTAEntry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FASTAFile.html">FASTAFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureFinder.html">FeatureFinder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureGroupingAlgorithm.html">FeatureGroupingAlgorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureGroupingAlgorithmKD.html">FeatureGroupingAlgorithmKD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FeatureGroupingAlgorithmUnlabeled.html">FeatureGroupingAlgorithmUnlabeled</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GNPSMGFFile.html">GNPSMGFFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GaussFitResult.html">GaussFitResult</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GaussFitter.html">GaussFitter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IMSIsotopeDistribution.html">IMSIsotopeDistribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IMSIsotopeDistribution_Peak.html">IMSIsotopeDistribution_Peak</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IonDetector.html">IonDetector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsobaricIsotopeCorrector.html">IsobaricIsotopeCorrector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsotopeCluster.html">IsotopeCluster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsotopeFitter1D.html">IsotopeFitter1D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="KDTreeFeatureMaps.html">KDTreeFeatureMaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LightMRMTransitionGroupCP.html">LightMRMTransitionGroupCP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LinearResampler.html">LinearResampler</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMDecoy.html">MRMDecoy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMFP_ComponentGroupParams.html">MRMFP_ComponentGroupParams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMFP_ComponentParams.html">MRMFP_ComponentParams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MRMFeaturePicker.html">MRMFeaturePicker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MSDataStoringConsumer.html">MSDataStoringConsumer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MSstatsFile.html">MSstatsFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MapAlignmentAlgorithmKD.html">MapAlignmentAlgorithmKD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MapAlignmentTransformer.html">MapAlignmentTransformer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MapConversion.html">MapConversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MascotXMLFile.html">MascotXMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MetaInfoInterface.html">MetaInfoInterface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MetaboTargetedTargetDecoy.html">MetaboTargetedTargetDecoy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MetaboTargetedTargetDecoy_MetaboTargetDecoyMassMapping.html">MetaboTargetedTargetDecoy_MetaboTargetDecoyMassMapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NoopMSDataWritingConsumer.html">NoopMSDataWritingConsumer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OPXL_PreprocessedPairSpectra.html">OPXL_PreprocessedPairSpectra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OSChromatogramMeta.html">OSChromatogramMeta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OSW_ChromExtractParams.html">OSW_ChromExtractParams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpenSwathScoring.html">OpenSwathScoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpenSwath_Scores.html">OpenSwath_Scores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OpenSwath_Scores_Usage.html">OpenSwath_Scores_Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ParentPeakMower.html">ParentPeakMower</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PlainMSDataWritingConsumer.html">PlainMSDataWritingConsumer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RNPxlModificationMassesResult.html">RNPxlModificationMassesResult</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RNPxlModificationsGenerator.html">RNPxlModificationsGenerator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RNaseDB.html">RNaseDB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RealMassDecomposer.html">RealMassDecomposer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Ribonucleotide.html">Ribonucleotide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SIDE.html">SIDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SiriusMSFile.html">SiriusMSFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SiriusMSFile_AccessionInfo.html">SiriusMSFile_AccessionInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SiriusMSFile_CompoundInfo.html">SiriusMSFile_CompoundInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SourceFile.html">SourceFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpectrumAccessQuadMZTransforming.html">SpectrumAccessQuadMZTransforming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SwathMap.html">SwathMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TermSpecificityNuc.html">TermSpecificityNuc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TransformationModelLinear.html">TransformationModelLinear</a></li>
+<li class="toctree-l2"><a class="reference internal" href="XQuestResultXMLFile.html">XQuestResultXMLFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SimpleOpenMSSpectraFactory.html">SimpleOpenMSSpectraFactory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SysInfo.html">SysInfo</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyOpenMS Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../classes.html">Class Documentation</a> &raquo;</li>
+      <li>MorpheusScore_Result</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/classes/MorpheusScore_Result.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="morpheusscore-result">
+<h1>MorpheusScore_Result<a class="headerlink" href="#morpheusscore-result" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="MorpheusScore_Result">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MorpheusScore_Result</span></span><a class="headerlink" href="#MorpheusScore_Result" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<p>Cython implementation of _MorpheusScore_Result</p>
+<p>Documentation is available at <a class="reference external" href="http://www.openms.de/current_doxygen/html/classOpenMS_1_1MorpheusScore_Result.html">http://www.openms.de/current_doxygen/html/classOpenMS_1_1MorpheusScore_Result.html</a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MorpheusScore_Result.MIC">
+<span class="sig-prename descclassname"><span class="pre">MorpheusScore_Result.</span></span><span class="sig-name descname"><span class="pre">MIC</span></span><a class="headerlink" href="#MorpheusScore_Result.MIC" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MorpheusScore_Result.TIC">
+<span class="sig-prename descclassname"><span class="pre">MorpheusScore_Result.</span></span><span class="sig-name descname"><span class="pre">TIC</span></span><a class="headerlink" href="#MorpheusScore_Result.TIC" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MorpheusScore_Result.err">
+<span class="sig-prename descclassname"><span class="pre">MorpheusScore_Result.</span></span><span class="sig-name descname"><span class="pre">err</span></span><a class="headerlink" href="#MorpheusScore_Result.err" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MorpheusScore_Result.matches">
+<span class="sig-prename descclassname"><span class="pre">MorpheusScore_Result.</span></span><span class="sig-name descname"><span class="pre">matches</span></span><a class="headerlink" href="#MorpheusScore_Result.matches" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MorpheusScore_Result.n_peaks">
+<span class="sig-prename descclassname"><span class="pre">MorpheusScore_Result.</span></span><span class="sig-name descname"><span class="pre">n_peaks</span></span><a class="headerlink" href="#MorpheusScore_Result.n_peaks" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="MorpheusScore_Result.score">
+<span class="sig-prename descclassname"><span class="pre">MorpheusScore_Result.</span></span><span class="sig-name descname"><span class="pre">score</span></span><a class="headerlink" href="#MorpheusScore_Result.score" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="MorpheusScore.html" class="btn btn-neutral float-left" title="MorpheusScore" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="MultiplexDeltaMasses.html" class="btn btn-neutral float-right" title="MultiplexDeltaMasses" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, axelwalter.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

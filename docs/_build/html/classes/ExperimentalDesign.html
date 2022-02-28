@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExperimentalDesign &mdash; pyOpenMS Documentation  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> pyOpenMS Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Content:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../classes.html">Class Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyOpenMS Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>ExperimentalDesign</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/classes/ExperimentalDesign.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="experimentaldesign">
+<h1>ExperimentalDesign<a class="headerlink" href="#experimentaldesign" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ExperimentalDesign">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ExperimentalDesign</span></span><a class="headerlink" href="#ExperimentalDesign" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<p>Cython implementation of _ExperimentalDesign</p>
+<p>Documentation is available at <a class="reference external" href="http://www.openms.de/current_doxygen/html/classOpenMS_1_1ExperimentalDesign.html">http://www.openms.de/current_doxygen/html/classOpenMS_1_1ExperimentalDesign.html</a></p>
+<blockquote>
+<div><p>Representation of an experimental design in OpenMS. Instances can be loaded with the ExperimentalDesignFile class</p>
+</div></blockquote>
+<dl class="py method">
+<dt class="sig sig-object py" id="ExperimentalDesign.fromConsensusMap">
+<span class="sig-prename descclassname"><span class="pre">ExperimentalDesign.</span></span><span class="sig-name descname"><span class="pre">fromConsensusMap</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ExperimentalDesign.fromConsensusMap" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: ExperimentalDesign fromConsensusMap(ConsensusMap c)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ExperimentalDesign.fromFeatureMap">
+<span class="sig-prename descclassname"><span class="pre">ExperimentalDesign.</span></span><span class="sig-name descname"><span class="pre">fromFeatureMap</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ExperimentalDesign.fromFeatureMap" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: ExperimentalDesign fromFeatureMap(FeatureMap f)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ExperimentalDesign.fromIdentifications">
+<span class="sig-prename descclassname"><span class="pre">ExperimentalDesign.</span></span><span class="sig-name descname"><span class="pre">fromIdentifications</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ExperimentalDesign.fromIdentifications" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: ExperimentalDesign fromIdentifications(libcpp_vector[ProteinIdentification] &amp; proteins)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ExperimentalDesign.getMSFileSection">
+<span class="sig-prename descclassname"><span class="pre">ExperimentalDesign.</span></span><span class="sig-name descname"><span class="pre">getMSFileSection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ExperimentalDesign.getMSFileSection" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: libcpp_vector[ExperimentalDesign_MSFileSectionEntry] getMSFileSection()</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ExperimentalDesign.getNumberOfFractionGroups">
+<span class="sig-prename descclassname"><span class="pre">ExperimentalDesign.</span></span><span class="sig-name descname"><span class="pre">getNumberOfFractionGroups</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ExperimentalDesign.getNumberOfFractionGroups" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: unsigned int getNumberOfFractionGroups()
+Allows to group fraction ids and source files. Return the number of fraction_groups</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ExperimentalDesign.getNumberOfFractions">
+<span class="sig-prename descclassname"><span class="pre">ExperimentalDesign.</span></span><span class="sig-name descname"><span class="pre">getNumberOfFractions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ExperimentalDesign.getNumberOfFractions" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: unsigned int getNumberOfFractions()
+Returns the number of fractions (= highest fraction index)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ExperimentalDesign.getNumberOfLabels">
+<span class="sig-prename descclassname"><span class="pre">ExperimentalDesign.</span></span><span class="sig-name descname"><span class="pre">getNumberOfLabels</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ExperimentalDesign.getNumberOfLabels" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: unsigned int getNumberOfLabels()
+Returns the number of labels per file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ExperimentalDesign.getNumberOfMSFiles">
+<span class="sig-prename descclassname"><span class="pre">ExperimentalDesign.</span></span><span class="sig-name descname"><span class="pre">getNumberOfMSFiles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ExperimentalDesign.getNumberOfMSFiles" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: unsigned int getNumberOfMSFiles()
+Returns the number of MS files (= fractions * fraction_groups)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ExperimentalDesign.getNumberOfSamples">
+<span class="sig-prename descclassname"><span class="pre">ExperimentalDesign.</span></span><span class="sig-name descname"><span class="pre">getNumberOfSamples</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ExperimentalDesign.getNumberOfSamples" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: unsigned int getNumberOfSamples()
+Returns the number of samples measured (= highest sample index)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ExperimentalDesign.getSample">
+<span class="sig-prename descclassname"><span class="pre">ExperimentalDesign.</span></span><span class="sig-name descname"><span class="pre">getSample</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ExperimentalDesign.getSample" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: unsigned int getSample(unsigned int fraction_group, unsigned int label)
+Returns sample index (depends on fraction_group and label)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ExperimentalDesign.getSampleSection">
+<span class="sig-prename descclassname"><span class="pre">ExperimentalDesign.</span></span><span class="sig-name descname"><span class="pre">getSampleSection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ExperimentalDesign.getSampleSection" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: ExperimentalDesign_SampleSection getSampleSection()
+Returns the Sample Section of the experimental design file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ExperimentalDesign.isFractionated">
+<span class="sig-prename descclassname"><span class="pre">ExperimentalDesign.</span></span><span class="sig-name descname"><span class="pre">isFractionated</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ExperimentalDesign.isFractionated" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: bool isFractionated()
+Returns whether at least one fraction_group in this experimental design is fractionated</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ExperimentalDesign.sameNrOfMSFilesPerFraction">
+<span class="sig-prename descclassname"><span class="pre">ExperimentalDesign.</span></span><span class="sig-name descname"><span class="pre">sameNrOfMSFilesPerFraction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ExperimentalDesign.sameNrOfMSFilesPerFraction" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: bool sameNrOfMSFilesPerFraction()
+Returns if each fraction number is associated with the same number of fraction_group</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ExperimentalDesign.setMSFileSection">
+<span class="sig-prename descclassname"><span class="pre">ExperimentalDesign.</span></span><span class="sig-name descname"><span class="pre">setMSFileSection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ExperimentalDesign.setMSFileSection" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setMSFileSection(libcpp_vector[ExperimentalDesign_MSFileSectionEntry] msfile_section)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ExperimentalDesign.setSampleSection">
+<span class="sig-prename descclassname"><span class="pre">ExperimentalDesign.</span></span><span class="sig-name descname"><span class="pre">setSampleSection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ExperimentalDesign.setSampleSection" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setSampleSection(ExperimentalDesign_SampleSection sample_section)
+Sets the Sample Section of the experimental design file</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, axelwalter.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feature &mdash; pyOpenMS Documentation  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> pyOpenMS Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Content:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../classes.html">Class Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyOpenMS Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Feature</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/classes/Feature.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="feature">
+<h1>Feature<a class="headerlink" href="#feature" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Feature">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Feature</span></span><a class="headerlink" href="#Feature" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<p>Cython implementation of _Feature</p>
+<dl>
+<dt>Documentation is available at <a class="reference external" href="http://www.openms.de/current_doxygen/html/classOpenMS_1_1Feature.html">http://www.openms.de/current_doxygen/html/classOpenMS_1_1Feature.html</a></dt><dd><p>– Inherits from [‘UniqueIdInterface’, ‘RichPeak2D’]</p>
+<p>The Feature class is used to describe the two-dimensional signal caused by an
+analyte. It can store a charge state and a list of peptide identifications
+(for peptides). The area occupied by the Feature in the LC-MS data set is
+represented by a list of convex hulls (one for each isotopic peak). There is
+also a convex hull for the entire Feature. The model description can store
+the parameters of a two-dimensional theoretical model of the underlying
+signal in LC-MS. Currently, non-peptide compounds are also represented as
+features</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.clearMetaInfo">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">clearMetaInfo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.clearMetaInfo" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void clearMetaInfo()
+Removes all meta values</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.clearUniqueId">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">clearUniqueId</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.clearUniqueId" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: size_t clearUniqueId()
+Clear the unique id. The new unique id will be invalid. Returns 1 if the unique id was changed, 0 otherwise</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.encloses">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">encloses</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.encloses" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: bool encloses(double rt, double mz)</p>
+<section id="returns-if-the-mass-trace-convex-hulls-of-the-feature-enclose-the-position-specified-by-rt-and-mz">
+<h2>Returns if the mass trace convex hulls of the feature enclose the position specified by <cite>rt</cite> and <cite>mz</cite><a class="headerlink" href="#returns-if-the-mass-trace-convex-hulls-of-the-feature-enclose-the-position-specified-by-rt-and-mz" title="Permalink to this headline"></a></h2>
+<dl class="field-list simple">
+<dt class="field-odd">param rt</dt>
+<dd class="field-odd"><p>Sequence to digest</p>
+</dd>
+<dt class="field-even">param mz</dt>
+<dd class="field-even"><p>Digestion products</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.ensureUniqueId">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">ensureUniqueId</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.ensureUniqueId" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: size_t ensureUniqueId()
+Assigns a valid unique id, but only if the present one is invalid. Returns 1 if the unique id was changed, 0 otherwise</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.getAnnotationState">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">getAnnotationState</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.getAnnotationState" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: AnnotationState getAnnotationState()</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.getCharge">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">getCharge</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.getCharge" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: int getCharge()</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.getConvexHull">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">getConvexHull</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.getConvexHull" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: ConvexHull2D getConvexHull()</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.getConvexHulls">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">getConvexHulls</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.getConvexHulls" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: libcpp_vector[ConvexHull2D] getConvexHulls()</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.getIntensity">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">getIntensity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.getIntensity" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: float getIntensity()
+Returns the data point intensity (height)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.getKeys">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">getKeys</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.getKeys" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void getKeys(libcpp_vector[String] &amp; keys)
+Fills the given vector with a list of all keys for which a value is set</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.getMZ">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">getMZ</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.getMZ" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: double getMZ()
+Returns the m/z coordinate (index 1)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.getMetaValue">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">getMetaValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.getMetaValue" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: DataValue getMetaValue(String)
+Returns the value corresponding to a string, or</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.getOverallQuality">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">getOverallQuality</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.getOverallQuality" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: float getOverallQuality()
+Model and quality methods</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.getPeptideIdentifications">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">getPeptideIdentifications</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.getPeptideIdentifications" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: libcpp_vector[PeptideIdentification] getPeptideIdentifications()
+Returns a reference to the PeptideIdentification vector</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.getQuality">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">getQuality</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.getQuality" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: float getQuality(size_t index)
+Returns the quality in dimension c</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.getRT">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">getRT</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.getRT" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: double getRT()
+Returns the RT coordinate (index 0)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.getSubordinates">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">getSubordinates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.getSubordinates" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: libcpp_vector[Feature] getSubordinates()
+Returns the subordinate features</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.getUniqueId">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">getUniqueId</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.getUniqueId" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: size_t getUniqueId()
+Returns the unique id</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.getWidth">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">getWidth</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.getWidth" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: float getWidth()</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.hasInvalidUniqueId">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">hasInvalidUniqueId</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.hasInvalidUniqueId" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: size_t hasInvalidUniqueId()
+Returns whether the unique id is invalid. Returns 1 if the unique id is invalid, 0 otherwise</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.hasValidUniqueId">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">hasValidUniqueId</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.hasValidUniqueId" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: size_t hasValidUniqueId()
+Returns whether the unique id is valid. Returns 1 if the unique id is valid, 0 otherwise</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.isMetaEmpty">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">isMetaEmpty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.isMetaEmpty" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: bool isMetaEmpty()
+Returns if the MetaInfo is empty</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.isValid">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">isValid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.isValid" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: bool isValid(uint64_t unique_id)
+Returns true if the unique_id is valid, false otherwise</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.metaRegistry">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">metaRegistry</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.metaRegistry" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: MetaInfoRegistry metaRegistry()
+Returns a reference to the MetaInfoRegistry</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.metaValueExists">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">metaValueExists</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.metaValueExists" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: bool metaValueExists(String)
+Returns whether an entry with the given name exists</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.removeMetaValue">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">removeMetaValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.removeMetaValue" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void removeMetaValue(String)
+Removes the DataValue corresponding to <cite>name</cite> if it exists</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.setCharge">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">setCharge</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.setCharge" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setCharge(int q)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.setConvexHulls">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">setConvexHulls</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.setConvexHulls" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setConvexHulls(libcpp_vector[ConvexHull2D])</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.setIntensity">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">setIntensity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.setIntensity" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setIntensity(float)
+Returns the data point intensity (height)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.setMZ">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">setMZ</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.setMZ" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setMZ(double)
+Returns the m/z coordinate (index 1)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.setMetaValue">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">setMetaValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.setMetaValue" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setMetaValue(String, DataValue)
+Sets the DataValue corresponding to a name</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.setOverallQuality">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">setOverallQuality</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.setOverallQuality" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setOverallQuality(float q)
+Sets the overall quality</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.setPeptideIdentifications">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">setPeptideIdentifications</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.setPeptideIdentifications" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setPeptideIdentifications(libcpp_vector[PeptideIdentification] &amp; peptides)
+Sets the PeptideIdentification vector</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.setQuality">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">setQuality</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.setQuality" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setQuality(size_t index, float q)
+Sets the quality in dimension c</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.setRT">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">setRT</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.setRT" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setRT(double)
+Returns the RT coordinate (index 0)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.setSubordinates">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">setSubordinates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.setSubordinates" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setSubordinates(libcpp_vector[Feature])
+Returns the subordinate features</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.setUniqueId">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">setUniqueId</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.setUniqueId" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setUniqueId(uint64_t rhs)
+Assigns a new, valid unique id. Always returns 1</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Feature.setWidth">
+<span class="sig-prename descclassname"><span class="pre">Feature.</span></span><span class="sig-name descname"><span class="pre">setWidth</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Feature.setWidth" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setWidth(float q)</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, axelwalter.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

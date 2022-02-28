@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Element &mdash; pyOpenMS Documentation  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> pyOpenMS Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Content:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../classes.html">Class Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyOpenMS Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Element</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/classes/Element.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="element">
+<h1>Element<a class="headerlink" href="#element" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Element">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Element</span></span><a class="headerlink" href="#Element" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<p>Cython implementation of _Element</p>
+<p>Documentation is available at <a class="reference external" href="http://www.openms.de/current_doxygen/html/classOpenMS_1_1Element.html">http://www.openms.de/current_doxygen/html/classOpenMS_1_1Element.html</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Element.getAtomicNumber">
+<span class="sig-prename descclassname"><span class="pre">Element.</span></span><span class="sig-name descname"><span class="pre">getAtomicNumber</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Element.getAtomicNumber" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: unsigned int getAtomicNumber()
+Returns the unique atomic number</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Element.getAverageWeight">
+<span class="sig-prename descclassname"><span class="pre">Element.</span></span><span class="sig-name descname"><span class="pre">getAverageWeight</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Element.getAverageWeight" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: double getAverageWeight()
+Returns the average weight of the element</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Element.getIsotopeDistribution">
+<span class="sig-prename descclassname"><span class="pre">Element.</span></span><span class="sig-name descname"><span class="pre">getIsotopeDistribution</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Element.getIsotopeDistribution" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: IsotopeDistribution getIsotopeDistribution()
+Returns the isotope distribution of the element</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Element.getMonoWeight">
+<span class="sig-prename descclassname"><span class="pre">Element.</span></span><span class="sig-name descname"><span class="pre">getMonoWeight</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Element.getMonoWeight" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: double getMonoWeight()
+Returns the mono isotopic weight of the element</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Element.getName">
+<span class="sig-prename descclassname"><span class="pre">Element.</span></span><span class="sig-name descname"><span class="pre">getName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Element.getName" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: String getName()
+Returns the name of the element</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Element.getSymbol">
+<span class="sig-prename descclassname"><span class="pre">Element.</span></span><span class="sig-name descname"><span class="pre">getSymbol</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Element.getSymbol" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: String getSymbol()
+Returns symbol of the element</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Element.setAtomicNumber">
+<span class="sig-prename descclassname"><span class="pre">Element.</span></span><span class="sig-name descname"><span class="pre">setAtomicNumber</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Element.setAtomicNumber" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setAtomicNumber(unsigned int atomic_number)
+Sets unique atomic number</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Element.setAverageWeight">
+<span class="sig-prename descclassname"><span class="pre">Element.</span></span><span class="sig-name descname"><span class="pre">setAverageWeight</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Element.setAverageWeight" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setAverageWeight(double weight)
+Sets the average weight of the element</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Element.setIsotopeDistribution">
+<span class="sig-prename descclassname"><span class="pre">Element.</span></span><span class="sig-name descname"><span class="pre">setIsotopeDistribution</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Element.setIsotopeDistribution" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setIsotopeDistribution(IsotopeDistribution isotopes)
+Sets the isotope distribution of the element</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Element.setMonoWeight">
+<span class="sig-prename descclassname"><span class="pre">Element.</span></span><span class="sig-name descname"><span class="pre">setMonoWeight</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Element.setMonoWeight" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setMonoWeight(double weight)
+Sets the mono isotopic weight of the element</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Element.setName">
+<span class="sig-prename descclassname"><span class="pre">Element.</span></span><span class="sig-name descname"><span class="pre">setName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Element.setName" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setName(String name)
+Sets the name of the element</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Element.setSymbol">
+<span class="sig-prename descclassname"><span class="pre">Element.</span></span><span class="sig-name descname"><span class="pre">setSymbol</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Element.setSymbol" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setSymbol(String symbol)
+Sets symbol of the element</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, axelwalter.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

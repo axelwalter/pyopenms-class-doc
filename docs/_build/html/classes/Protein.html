@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protein &mdash; pyOpenMS Documentation  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> pyOpenMS Documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Content:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../classes.html">Class Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">pyOpenMS Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Protein</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/classes/Protein.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="protein">
+<h1>Protein<a class="headerlink" href="#protein" title="Permalink to this headline"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Protein">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Protein</span></span><a class="headerlink" href="#Protein" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<p>Cython implementation of _Protein</p>
+<dl class="simple">
+<dt>Documentation is available at <a class="reference external" href="http://www.openms.de/current_doxygen/html/classOpenMS::TargetedExperimentHelper::RetentionTime::RTUnit_1_1Protein.html">http://www.openms.de/current_doxygen/html/classOpenMS::TargetedExperimentHelper::RetentionTime::RTUnit_1_1Protein.html</a></dt><dd><p>– Inherits from [‘CVTermList’]</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="Protein.addCVTerm">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">addCVTerm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Protein.addCVTerm" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void addCVTerm(CVTerm &amp; term)
+Adds a CV term</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Protein.clearMetaInfo">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">clearMetaInfo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Protein.clearMetaInfo" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void clearMetaInfo()
+Removes all meta values</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Protein.consumeCVTerms">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">consumeCVTerms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Protein.consumeCVTerms" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void consumeCVTerms(Map[String,libcpp_vector[CVTerm]] cv_term_map)
+Merges the given map into the member map, no duplicate checking</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Protein.empty">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">empty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Protein.empty" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: bool empty()</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Protein.getCVTerms">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">getCVTerms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Protein.getCVTerms" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: Map[String,libcpp_vector[CVTerm]] getCVTerms()
+Returns the accession string of the term</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Protein.getKeys">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">getKeys</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Protein.getKeys" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void getKeys(libcpp_vector[String] &amp; keys)
+Fills the given vector with a list of all keys for which a value is set</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Protein.getMetaValue">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">getMetaValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Protein.getMetaValue" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: DataValue getMetaValue(String)
+Returns the value corresponding to a string, or</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Protein.hasCVTerm">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">hasCVTerm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Protein.hasCVTerm" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: bool hasCVTerm(String accession)</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Protein.id">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#Protein.id" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Protein.isMetaEmpty">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">isMetaEmpty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Protein.isMetaEmpty" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: bool isMetaEmpty()
+Returns if the MetaInfo is empty</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Protein.metaRegistry">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">metaRegistry</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Protein.metaRegistry" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: MetaInfoRegistry metaRegistry()
+Returns a reference to the MetaInfoRegistry</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Protein.metaValueExists">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">metaValueExists</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Protein.metaValueExists" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: bool metaValueExists(String)
+Returns whether an entry with the given name exists</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Protein.removeMetaValue">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">removeMetaValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Protein.removeMetaValue" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void removeMetaValue(String)
+Removes the DataValue corresponding to <cite>name</cite> if it exists</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Protein.replaceCVTerm">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">replaceCVTerm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Protein.replaceCVTerm" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void replaceCVTerm(CVTerm &amp; term)
+Replaces the specified CV term</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Protein.replaceCVTerms">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">replaceCVTerms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Protein.replaceCVTerms" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void replaceCVTerms(libcpp_vector[CVTerm] cv_terms, String accession)</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Protein.sequence">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">sequence</span></span><a class="headerlink" href="#Protein.sequence" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Protein.setCVTerms">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">setCVTerms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Protein.setCVTerms" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setCVTerms(libcpp_vector[CVTerm] &amp; terms)
+Sets the CV terms</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Protein.setMetaValue">
+<span class="sig-prename descclassname"><span class="pre">Protein.</span></span><span class="sig-name descname"><span class="pre">setMetaValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Protein.setMetaValue" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p>Cython signature: void setMetaValue(String, DataValue)
+Sets the DataValue corresponding to a name</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, axelwalter.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
